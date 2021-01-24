@@ -2,7 +2,7 @@ import React, { createContext, useState, useEffect } from 'react'
 import uuid from 'uuid'
 
 export const TaskListContext = createContext()
-
+//create context provider
 const TaskListContextProvider = props => {
   const initialState = JSON.parse(localStorage.getItem('tasks')) || []
 
